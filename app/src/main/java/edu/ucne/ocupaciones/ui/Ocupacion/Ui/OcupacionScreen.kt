@@ -25,7 +25,6 @@ fun OcupacionScreen() {
         Ocupacion(Modifier.align(Alignment.Center))
     }
 }
-
 @Composable
 fun Ocupacion(modifier: Modifier) {
     Column(modifier = modifier) {
@@ -36,10 +35,8 @@ fun Ocupacion(modifier: Modifier) {
         SalarioFild()
         Spacer(modifier = Modifier.padding(16.dp))
         GuardarButton()
-
     }
 }
-
 @Composable
 fun GuardarButton() {
     Button(
@@ -50,11 +47,9 @@ fun GuardarButton() {
         colors = ButtonDefaults.buttonColors(backgroundColor = Color(0xFF2196F3))
     ) {
         Icon(imageVector= Icons.Default.AddCircle,contentDescription="Guardar" )
-        Text(text = "Gardar")
+        Text(text = "Guardar")
     }
-
 }
-
 @Composable
 fun SalarioFild() {
     TextField(
@@ -72,7 +67,6 @@ fun SalarioFild() {
         )
     )
 }
-
 @Composable
 fun DescripcionFild() {
     TextField(
@@ -90,7 +84,6 @@ fun DescripcionFild() {
         )
     )
 }
-
 @Composable
 fun HeaderTitle(modifier: Modifier) {
     Text(text = "Registro de Ocupaciones", modifier = modifier)
